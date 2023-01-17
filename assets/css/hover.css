@@ -2149,6 +2149,7 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
+  padding-bottom: 4px;
 }
 .hvr-underline-from-left:before {
   content: "";
@@ -2157,7 +2158,7 @@
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #fff;
+  background: #ff3400;
   height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -2179,6 +2180,7 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
+  padding-bottom: 4px;
 }
 .hvr-underline-from-center:before {
   content: "";
@@ -2187,7 +2189,7 @@
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #2098D1;
+  background: #4A2B82;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;

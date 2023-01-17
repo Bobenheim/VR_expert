@@ -6,7 +6,10 @@
     --color-body: #575757;
     --color-background: #F5F6F9;
     --color-background-dark: #1E1E1E;
+    --color-purple-main: #4A2B82;
+    --color-purple-accent: #6B52A2;
     --border-radius: 20px;
+    --color-purple-accent-light: #876dc0;
 }
 *, *::after, *::before {
     box-sizing: border-box;
@@ -32,11 +35,29 @@ h2 {
   font-size: 4.5rem;
   text-align: center;
   margin: 6rem 0 4rem 0;
+  color: var(--color-purple-accent);
 }
 h3 {
   font-size: 3.5rem;
 }
+
 /* REUSED */
+.bg__white {
+  background-color: #fff;
+}
+.align-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+.margin--bottom {
+  margin-bottom: 6rem;
+}
+.margin--top {
+  margin-top: 4rem;
+}
 .padding--bottom {
   padding-bottom: 4rem;
 }
@@ -44,8 +65,12 @@ h3 {
   margin-top: 1rem;
 }
 .container {
-  padding: 0 3rem 10rem 3rem;
+  padding-bottom: 10rem;
   max-width: 1140px;
+}
+.side--padding {
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 .container--center {
   display: flex;
@@ -64,7 +89,7 @@ h3 {
 }
 
 .skewed--both {
-  clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0% 100%);
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -75,11 +100,28 @@ h3 {
 .heading__light {
   color: #fff;
 }
+
+/* LINKS */
+.link-purple {
+  color: var(--color-purple-accent);
+  transition: 0.3s;
+}
+.link-purple:hover {
+  color:var(--color-purple-main);
+}
+.hover__link {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hover__link:hover {
+  transform: scale(1.03);
+}
 /**/
 .logo {
     width: 80px;
     height: auto;
     align-self: center;
+    padding: 10px;
 } 
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
@@ -98,7 +140,7 @@ h3 {
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
     .logo {
-      width: 60px;
+      width: 70px;
       align-self: center;
     }
     .topnav {
@@ -128,7 +170,7 @@ h3 {
 /* ICONS */
 .menu--icon {
   width: 40px;
-  color: white;
+  color: var(--color-purple-accent);
 }
 .icon {
   width: 40px;
@@ -144,6 +186,32 @@ h3 {
 }
 .icon--red {
   color: var(--color-accent);
+}
+/* IMAGES */
+.card__img {
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  box-shadow:
+  0px 1.2px 3.6px rgba(0, 0, 0, 0.052),
+  0px 3.3px 10px rgba(0, 0, 0, 0.075),
+  0px 7.8px 24.1px rgba(0, 0, 0, 0.098),
+  0px 26px 80px rgba(0, 0, 0, 0.15)
+;
+}
+.img__upcoming {
+  width: 92vw;
+}
+.video {
+  width: 90vw;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+.div--centered{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /* HERO */
 .hero__image {
@@ -197,6 +265,9 @@ h3 {
 .card--white {
   background-color: #fff;
 }
+.card--dark {
+  background-color: #3d3d3d;
+}
 
 /* FOOTER */
 .block--dark {
@@ -209,7 +280,7 @@ h3 {
 }
 
 .footer__container {
-  padding: 4rem 3rem 2rem 3rem;
+  padding: 2rem 3rem;
 }
 
 .footer {
@@ -257,6 +328,31 @@ ul.footer--list {
 .footer a:hover {
   color: #fff;
 }
+/* CONTACT */
+.contact {
+  color: var(--color-purple-accent-light);
+  font-weight: 600;
+  font-size: 3rem;
+}
+.contac
+/* BUTTONS */
+.btn {
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 2rem auto;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 20px #6b52a25b;
+}
+.btn-purple {
+  background-color: var(--color-purple-accent);
+  color: #fff;
+}
 /* LISTS */
 ul {
   list-style: none;
@@ -274,8 +370,8 @@ li {
 }
 /* NAVBAR */
 .nav {
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(7px) saturate(160%) contrast(45%) brightness(140%);
   -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   position: fixed;
   z-index: 99;
@@ -287,7 +383,6 @@ li {
   padding: 0 1rem;
 }
 .nav__toggler {
-  opacity: 0.5;
   cursor: pointer;
   transition: 0.3s ease-in;
 }
@@ -302,17 +397,18 @@ a {
 .nav__item {
   padding: 0.6rem 2rem;
   text-decoration: none;
+  color: var(--color-purple-accent);
 }
 
 .nav__item > a {
-  color: #fff;
+  color: var(--color-purple-accent);
   transition: color 0.2s;
 }
 .nav__item > a:hover {
-  color: var(--color-secondary);
+  color: var(--color-purple-main);
 }
 .nav.collapsible--expanded .nav__toggler {
-  opacity: 1;
+  color: var(--color-purple-main);
 }
 
 .nav__brand {
@@ -322,14 +418,16 @@ a {
 
 /* COLLAPSIBLES */
 .collapsible__header {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
 .collapsible__heading {
-  margin-top: 0;
   font-size: 3rem;
 }
 .collapsible__chevron {
+  margin-top: 2.5rem;
+  margin-left: 3rem;
   transform: rotate(-90deg);
   transition: transform 0.3s;
 }
@@ -346,4 +444,130 @@ a {
   max-height: 100vh;
   opacity: 1;
   transition: all 0.3s;
+}
+.collapsible__img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin-top: 2rem;
+}
+/* BEFORE AFTER SLIDER */
+.container--slider { 
+	height: 73.5vw;
+	margin: 4rem auto 0 auto;
+	max-height: 750px;
+	max-width: 1000px;
+	overflow: hidden;
+	width: 98vw;
+}
+/* SLIDER 1 */
+.container--slider figure { 
+	background-image: url(/assets/images/before_floor.webp);
+	background-size: cover;
+	font-size: 0;
+	height: 100%;
+	margin: 0; 
+	position: relative;
+	width: 100%; 
+}
+#compare {
+	background-image: url(/assets/images/after_floor.webp);
+	background-size: cover;
+	bottom: 0;
+	border-right: 5px solid rgba(255,255,255,0.7);
+	box-shadow: 10px 0 15px -13px #000;
+	height: 100%;
+	max-width: 98.6%;
+	min-width: 0.6%;
+	overflow: visible;
+	position: absolute;
+	width: 50%; 
+	animation: first 2s 1 normal ease-in-out 0.1s; 
+	-webkit-animation: first 2s 1 normal ease-in-out 0.1s; 
+}
+input#slider {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none; 
+	background: transparent;
+	cursor: col-resize;
+	height: 100vw;
+	left: 0;
+	margin: 0;
+	outline: none; 
+	padding: 0;
+	position: relative;
+	top: -100vw;
+	width: 100%;
+}
+input#slider::-moz-range-track { 
+	background: transparent; 
+}
+input#slider::-ms-track {
+	border: none; 
+	background-color: transparent;
+	height: 100vw; 
+	left: 0; 
+	outline: none; 
+	position: relative;
+	top: -100vw; 
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	cursor: col-resize;
+	color:transparent;
+}
+input#slider::-ms-fill-lower {
+	background-color:transparent;
+}
+input#slider::-webkit-slider-thumb {
+	-webkit-appearance:none;
+	height: 100vw;
+	width: 0.5%;
+	opacity: 0;
+}
+input#slider::-moz-range-thumb {
+	-moz-appearance: none;
+	height: 100vw;
+	width: 0.5%;
+	opacity: 0;
+}   
+input#slider::-ms-thumb {
+	height: 100vw;
+	width: 0.5%; 
+	opacity:0;
+}
+input#slider::-ms-tooltip {
+	display:none;
+}
+#compare::before {
+	background: url(https://webdevtrick.com/wp-content/uploads/comparision.png) no-repeat scroll 0 center transparent;
+	background-size:contain;
+	content: " ";
+	float: right;
+	height: 100%;
+	margin-right: -34px;
+	position: relative;
+	top:0;
+	width: 64px;
+}
+#compare::before {
+	background: url(https://webdevtrick.com/wp-content/uploads/comparision.png) no-repeat scroll 0 center transparent;
+	background-size:contain;
+	content: " ";
+	float: right;
+	height: 100%;
+	margin-right: -34px;
+	position: relative;
+	top:0;
+	width: 64px;
+}
+@keyframes first {
+  0% {width: 0%; }
+  50% {width: 80%; }
+  100% {width: 50%; }
+}
+@-webkit-keyframes first {
+  0% {width: 0%; }
+  50% {width: 80%; }
+  100% {width: 50%; }
 }

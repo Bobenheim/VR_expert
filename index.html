@@ -18,7 +18,7 @@
     <header>
 <!-- NAVBAR -->
 <nav class="nav collapsible">
-    <a class="nav__brand" href="/"><img class="logo" src="/assets/images/VRexpert_logo_white.png" alt="logo of the company"></a>
+    <a class="nav__brand" href="/"><img class="logo" src="/assets/images/VRexpert_color.png" alt="logo of the company"></a>
             <i class="fa fa-bars menu--icon nav__toggler"></i>
         <ul class="list nav__list collapsible__content hv">
             <li class="nav__item"><a href="#">item 1</a></li>
@@ -27,6 +27,7 @@
             <li class="nav__item"><a href="#">Link 4</a></li>
         </ul>
 </nav>
+<!-- HERO BANNER -->
     </header>
     <section  id="hero">
         <div class="hero__background">
@@ -37,34 +38,120 @@
             <p class="hero__desc">pro jakýkoli Váš projekt</p>
         </div>
     </section>
-
-
-    <section class="container">
-        <h2>Heading 2</h2>
-        <img class="icon--title" src="/assets/images/touch-icon.svg" alt="">
-        <h3 class="heading--title">Heading 3</h3>
-        <p>Lorem ipsum dolor sit amet consectetur. Vitae id lorem montes lorem massa massa posuere faucibus. Integer in cursus aliquam morbi adipiscing. A mattis in sit varius tincidunt sit adipiscing semper. Suspendisse et vel lectus ipsum pretium.</p>
-        <p class="text--accent">zjistit více  <i class="fa-solid fa-arrow-right icon--red"></i></p>
-        <img class="banner center" src="/assets/images/banner_1.png" alt="">
+<!-- CLIENT -->
+    <section id="client" class="container">
+        <div class="side--padding">
+        <h2 class="margin--bottom">Naše</br>služby</h2>
+        <img class="icon--title" src="/assets/images/arrow-cross.svg" alt="">
+        <h3 class="heading--title">Klientské změny</h3>
+        <p>Umožňujeme implementaci pro klientské změny, kdy si sami mohou navolit barvy, nebo i materiály stěn, dveří či jiných komponentů nemovitosti, tudíž si klienti sami mohou zobrazit nemovitost tak, jak by se jim nejvíce líbila.</p>
+        <a href="https://3dvre.cz/demo/" class="text--accent hover__link" target="_blank">přejít na projekt  <i class="fa-solid fa-arrow-right icon--red"></i></a>
+    </div>
+<!-- BEFORE/AFTER SLIDER-->
+    <div class="container--slider">
+        <figure>
+        <div id="compare"></div>
+        </figure>
+        <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="slider"/>
+    </div>
+</section>
+<!-- VISU -->
+    <section id="visualization" class="container side--padding">
         <div class="card card--white">
-            <img class="icon--title" src="/assets/images/touch-icon.svg" alt="">
-            <h3 class="heading--title">Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Vitae id lorem montes lorem massa massa posuere faucibus. Integer in cursus aliquam morbi adipiscing. A mattis in sit varius tincidunt sit adipiscing semper. Suspendisse et vel lectus ipsum pretium.</p>
+            <img class="icon--title" src="/assets/images/hotel.svg" alt="">
+            <h3 class="heading--title">Reálná</br>vizualizace</h3>
+            <p>Model vytváříme nejen tak, aby odpovídal realitě, ale zároveň ho do ní i zasadíme. Je tak možné zobrazit si nemovitost reálně tam, kde bude stát a zákazník se může rozhlédnout i po dané lokalitě.</p>
+            <img class="card__img banner"src="/assets/images/vizu_ext.webp" alt="">
         </div>
     </section>
-    <section class="container skewed--both black__background">
-        <h2 class="heading__light">Heading 2</h2>
+<!-- VR ready-->
+    <section class="container skewed--both black__background margin--bottom">
+        <h2 class="heading__light">Přizpůsobené</br>přímo pro Vás</h2>
         <img class="banner padding--bottom" src="/assets/images/Banner_2.png" alt="">
-        <img class="icon--title" src="/assets/images/touch-icon.svg" alt="">
-        <h3 class="heading--title heading__light">Heading 3</h3>
-        <p>Lorem ipsum dolor sit amet consectetur. Vitae id lorem montes lorem massa massa posuere faucibus. Integer in cursus aliquam morbi adipiscing. A mattis in sit varius tincidunt sit adipiscing semper. Suspendisse et vel lectus ipsum pretium.</p>
-        <p class="text--accent">zjistit více  <i class="fa-solid fa-arrow-right icon--red"></i></p>
-        <img class="banner center" src="/assets/images/banner_1.png" alt="">
-    </section>
+        <div class="side--padding">
+            <img class="icon--title" src="/assets/images/vr-glasses.svg" alt="">
+            <h3 class="heading--title heading__light">VR ready</h3>
+            <p>Veškeré naše virtuální je také možné zobrazit ve virtuálních brýlích a vnést tak lidi přímo do nemovitosti.</p>
+        </div>
+        <div class="div--centered padding--bottom">
+            <video class="video" src="/assets/images/oculus.mov" type="vide/mov" autoplay loop></video>
+        </div>
+<!-- RESPONSIVE -->
+    <div class="side--padding align-right">
+        <div class="card card--dark  margin--bottom">
+            <img class="icon--title" src="/assets/images/responsive.svg" alt="">
+            <h3 class="heading--title heading__light">Responzivní</h3>
+            <p>Vizualizace Vám snadno vložíme na web, kde je bude možné prohlédnout na jakémkoli zařízení. Může si je tak kdokoli prohlédnout a Vy se nemusíte starat o to, na jakém zařízení si je zobrazí.</p>
+            <a href="https://3dvre.cz/nadrazni/" class="text--accent hover__link hvr-underline-from-left margin--bottom" target="_blank">přejít na projekt</a>
+            <img class="banner center bg__white card__img" src="/assets/images/devices_mockup.webp" alt="">
+        </div>
+    </div>
+<!-- 3D MODEL -->
+<!--     <div class="side--padding div--centered">
+        <img class="icon--title" src="/assets/images/cube.svg" alt="">
+        <h3 class="heading--title heading__light">Interaktivní 3D model</h3>
+        <p>Aktuálně pro Vás ještě připravujeme možnost </p>
+    </div>
+    <div class="div--centered">
+        <img class="banner card__img img__upcoming" src="/assets/images/blurred_img.png" alt="upcoming feature image">
+    </div> -->
+</section>
+<!-- STUDIE -->
+<section class="container ">
+    <div class="side--padding div--centered">
+        <h2 class="margin--bottom"><span class="">Případové</span></br>studie</h2>
+    </div>
+        <section class="collapsible footer__section">
+            <header class="collapsible__header">
+                <h3 class="collapsible__heading footer__heading">Alzheimer centrum Vyškov</h3>
+                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="">
+            </header>
+            <div class="collapsible__content">
+                    <div class="div--centered">
+                        <img class="collapsible__img"src="/assets/images/vizu_ext.webp" alt="">
+                        <a href="https://3dvre.cz/ac3/" target="_blank"><p class="hover__link link-purple hvr-underline-from-center">navštívit projekt</p></a>
+                    </div>
+            </div>
+        </section>
+
+        <section class="collapsible footer__section">
+            <header class="collapsible__header">
+                <h3 class="collapsible__heading footer__heading">Byty Nádražní</h3>
+                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="">
+            </header>
+            <div class="collapsible__content">
+                    <div class="div--centered">
+                        <img class="collapsible__img"src="/assets/images/vizu_ext.webp" alt="">
+                        <a href="https://3dvre.cz/nadrazni/" target="_blank"><p class="hover__link link-purple hvr-underline-from-center">navštívit projekt</p></a>
+                    </div>
+            </div>
+        </section>
+
+        <section class="collapsible footer__section">
+            <header class="collapsible__header">
+                <h3 class="collapsible__heading footer__heading">Trojdomy Třebušice</h3>
+                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="">
+            </header>
+            <div class="collapsible__content">
+                    <div class="div--centered">
+                        <img class="collapsible__img"src="/assets/images/vizu_ext.webp" alt="">
+                        <a href="https://3dvre.cz/trebus/" target="_blank"><p class="hover__link link-purple hvr-underline-from-center">navštívit projekt</p></a>
+                    </div>
+            </div>
+        </section>
+</section>
+<!-- CONTACT -->
+<section class="side--padding padding--bottom">
+    <div class="card card--white">
+        <h3 class="heading--title padding--bottom">KONTAKT</h3>
+        <p class="hover__link"><a class="contact" href="tel:+420606211608">+420 606 211 608</a></p>
+        <p class="hover__link"><a class="contact" href="mailto:info@vre.cz">info@vre.cz</a></p>
+    </div>
+</section>
 <!-- FOOTER -->    
     <footer class="block block--dark footer">
         <div class="footer__container grid footer__sections">
-            <section class="collapsible collapsible--expanded footer__section">
+<!--             <section class="collapsible collapsible--expanded footer__section">
                 <header class="collapsible__header">
                     <h4 class="collapsible__heading footer__heading heading__light">Menu</h4>
                         <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="">
@@ -76,11 +163,11 @@
                         <li><a href="#">Link 3</a></li>
                     </ul>
                 </div>
-            </section>
-            <sedction class="footer__brand">
+            </section> -->
+            <section class="footer__brand">
                 <img src="/assets/images/VRexpert_logo_white.png" alt="company logo">
-                <p class="footer__copyright">Copyright 2023 Virtuell s.r.o.</p>
-            </sedction>
+                <p class="footer__copyright">Copyright 2023 VR expert</p>
+            </section>
         </div>
     </footer>
     <script src="/js/main.js"></script>
