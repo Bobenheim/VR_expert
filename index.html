@@ -18,7 +18,7 @@
     <header>
 <!-- NAVBAR -->
 <nav class="nav collapsible">
-    <a class="nav__brand" href="/"><img class="logo" src="/assets/images/VRexpert_color.png" alt="logo of the company"></a>
+    <a class="nav__brand" href="#hero"><img class="logo" src="/assets/images/VRexpert_color.png" alt="logo of the company"></a>
             <i class="fa fa-bars menu--icon nav__toggler"></i>
         <ul class="list nav__list collapsible__content hv">
             <li class="nav__item"><a href="#client">Klientské změny</a></li>
@@ -41,52 +41,61 @@
     </section>
 <!-- CLIENT -->
     <section id="client" class="container">
-        <div class="side--padding">
         <h2 class="margin--bottom">Naše</br>služby</h2>
-        <img class="icon--title" src="/assets/images/arrow-cross.svg" alt="">
-        <h3 class="heading--title">Klientské změny</h3>
-        <p>Umožňujeme implementaci pro klientské změny, kdy si sami mohou navolit barvy, nebo i materiály stěn, dveří či jiných komponentů nemovitosti, tudíž si klienti sami mohou zobrazit nemovitost tak, jak by se jim nejvíce líbila.</p>
-        <a href="https://3dvre.cz/demo/" class="text--accent hover__link" target="_blank">přejít na projekt  <i class="fa-solid fa-arrow-right icon--red"></i></a>
-    </div>
-<!-- BEFORE/AFTER SLIDER-->
-    <div class="container--slider">
-        <figure>
-        <div id="compare"></div>
-        </figure>
-        <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="slider"/>
-    </div>
-</section>
+            <div class="container__desktop">
+                <div class="container__75">
+                    <div  class="side--padding">
+                    <img class="icon--title" src="/assets/images/arrow-cross.svg" alt="">
+                    <h3 class="heading--title">Klientské změny</h3>
+                    <p>Umožňujeme implementaci pro klientské změny, kdy si sami mohou navolit barvy, nebo i materiály stěn, dveří či jiných komponentů nemovitosti, tudíž si klienti sami mohou zobrazit nemovitost tak, jak by se jim nejvíce líbila.</p>
+                    <a href="https://3dvre.cz/demo/" class="text--accent hover__link" target="_blank">přejít na projekt  <i class="fa-solid fa-arrow-right icon--red"></i></a>
+                    </div>
+                    <!-- BEFORE/AFTER SLIDER-->
+                        <div class="container--slider">
+                            <figure>
+                            <div id="compare"></div>
+                            </figure>
+                            <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="slider"/>
+                        </div>
+                </div>
+
 <!-- VISU -->
-    <section id="visualization" class="container side--padding">
+    <div id="visualization" class="container side--padding">
         <div class="card card--white">
             <img class="icon--title" src="/assets/images/hotel.svg" alt="">
             <h3 class="heading--title">Reálná</br>vizualizace</h3>
             <p>Model vytváříme nejen tak, aby odpovídal realitě, ale zároveň ho do ní i zasadíme. Je tak možné zobrazit si nemovitost reálně tam, kde bude stát a zákazník se může rozhlédnout i po dané lokalitě.</p>
             <img class="card__img banner"src="/assets/images/vizu_ext.webp" alt="">
         </div>
-    </section>
+    </div>
+</div>
+</section>
 <!-- VR ready-->
     <section id="VR" class="container skewed--both black__background margin--bottom">
         <h2 class="heading__light side--padding">Na míru</br>přímo pro Vás</h2>
-        <img class="banner padding--bottom" src="/assets/images/Banner_2.png" alt="">
-        <div class="side--padding">
-            <img class="icon--title" src="/assets/images/vr-glasses.svg" alt="">
-            <h3 class="heading--title heading__light">VR ready</h3>
-            <p>Veškeré naše virtuální je také možné zobrazit ve virtuálních brýlích a vnést tak lidi přímo do nemovitosti.</p>
-        </div>
-        <div class="div--centered padding--bottom">
-            <video class="video" src="/assets/images/oculus.mov" type="vide/mov" autoplay loop></video>
-        </div>
+        <img class="banner padding--bottom banner__img" src="/assets/images/Banner_2.png" alt="">
+        <div class="container__desktop">
+            <div class="container--center container__75">
+                <div class="side--padding">
+                    <img class="icon--title" src="/assets/images/vr-glasses.svg" alt="">
+                    <h3 class="heading--title heading__light">VR ready</h3>
+                    <p>Veškeré naše virtuální je také možné zobrazit ve virtuálních brýlích a vnést tak lidi přímo do nemovitosti.</p>
+                </div>
+                <div class="div--centered padding--bottom">
+                    <video class="video" src="/assets/images/oculus.mov" type="vide/mov" autoplay loop></video>
+                </div>
+            </div>
 <!-- RESPONSIVE -->
-    <div class="side--padding">
-        <div class="card card--dark  margin--bottom">
-            <img class="icon--title" src="/assets/images/responsive.svg" alt="">
-            <h3 class="heading--title heading__light">Responzivní</h3>
-            <p>Vizualizace Vám snadno vložíme na web, kde je bude možné prohlédnout na jakémkoli zařízení. Může si je tak kdokoli prohlédnout a Vy se nemusíte starat o to, na jakém zařízení si je zobrazí.</p>
-            <a href="https://3dvre.cz/nadrazni/" class="text--accent hover__link hvr-underline-from-left margin--bottom" target="_blank">přejít na projekt</a>
-            <img class="banner center bg__white card__img" src="/assets/images/devices_mockup.webp" alt="">
+            <div class="side--padding">
+                <div class="card card--dark  margin--bottom">
+                    <img class="icon--title" src="/assets/images/responsive.svg" alt="">
+                    <h3 class="heading--title heading__light">Responzivní</h3>
+                    <p>Vizualizace Vám snadno vložíme na web, kde je bude možné prohlédnout na jakémkoli zařízení. Může si je tak kdokoli prohlédnout a Vy se nemusíte starat o to, na jakém zařízení si je zobrazí.</p>
+                    <a href="https://3dvre.cz/nadrazni/" class="text--accent hover__link hvr-underline-from-left margin--bottom" target="_blank">přejít na projekt</a>
+                    <img class="banner center bg__white card__img" src="/assets/images/devices_mockup.webp" alt="">
+                </div>
+            </div>
         </div>
-    </div>
 <!-- 3D MODEL -->
 <!--     <div class="side--padding div--centered">
         <img class="icon--title" src="/assets/images/cube.svg" alt="">
@@ -98,7 +107,7 @@
     </div> -->
 </section>
 <!-- STUDIE -->
-<section id="studies" class="container ">
+<section id="studies" class="container container--studies">
     <div class="side--padding div--centered">
         <h2 class="margin--bottom"><span class="">Případové</span></br>studie</h2>
     </div>
@@ -231,8 +240,8 @@
 </section>
 </section>
 <!-- CONTACT -->
-<section id="contact" class="side--padding padding--bottom margin--bottom">
-    <div class="card card--white">
+<section id="contact" class="side--padding padding--bottom margin--bottom container--center">
+    <div class="card card--white card__max-width">
         <h3 class="heading--title padding--bottom">KONTAKT</h3>
         <p class="hover__link"><a class="contact" href="tel:+420606211608">+420 606 211 608</a></p>
         <p class="hover__link"><a class="contact" href="mailto:info@vre.cz">info@vre.cz</a></p>
@@ -265,7 +274,7 @@
                 </div>
             </section> -->
             <section class="footer__brand">
-                <a href="/"><img src="/assets/images/VRexpert_logo_white.png" alt="company logo"></a>
+                <a href="#hero"><img src="/assets/images/VRexpert_logo_white.png" alt="company logo"></a>
                 <p class="footer__copyright">Copyright 2023 VR expert</p>
             </section>
         </div>

@@ -88,7 +88,6 @@ h3 {
 }
 .container {
   padding-bottom: 10rem;
-  max-width: 1140px;
 }
 .side--padding {
   padding-right: 3rem;
@@ -734,6 +733,8 @@ input#slider::-ms-tooltip {
   100% {width: 50%; }
 }
 
+/* MEDIA QUERRIES */
+
 @media screen and (max-width: 768px) {
   .hidden-mobile {
     display: none;
@@ -745,3 +746,77 @@ input#slider::-ms-tooltip {
     display: none;
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .side--padding {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .hero__heading {
+    font-size: 141px;
+  }
+  .banner {
+    width: 66.6%;
+    margin-left: 10vw;
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .hero__heading {
+    font-size: 196px;
+    margin-top: -13rem;
+  }
+  .hero__image {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+  }
+  .hero__desc {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  .side--padding {
+    padding-left: 6rem;
+    padding-right: 6rem;;
+  }
+  .container__desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .container__75 {
+    width: 250vw;
+  }
+  .container--slider {
+    width: 100%;
+    padding-left: 6rem;
+  }
+  .card--white {
+    margin-top: 14rem;
+  }
+  .video {
+    width: 50vw;
+  }
+  .banner__img {
+    width: 30vw;
+    margin-top: -22rem;
+    padding-bottom: 0;
+    padding-left: 6rem;
+  }
+  .container--studies {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .collapsible__img {
+    width: 90%;
+  }
+  .card__max-width {
+    width: 500px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  }
