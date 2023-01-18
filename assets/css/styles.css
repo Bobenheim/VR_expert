@@ -599,15 +599,15 @@ a {
 .nav__item {
   padding: 0.6rem 2rem;
   text-decoration: none;
-  color: var(--color-purple-accent);
+  color: var(--color-purple-accent-light);
 }
 
 .nav__item > a {
-  color: var(--color-purple-accent);
+  color: var(--color-purple-main);
   transition: color 0.2s;
 }
 .nav__item > a:hover {
-  color: var(--color-purple-main);
+  color: var(--color-purple-accent-light);
 }
 .nav.collapsible--expanded .nav__toggler {
   color: var(--color-purple-main);
@@ -952,9 +952,6 @@ input#slider::-ms-tooltip {
     width: 40vw;
     max-width: 900px;
   }
-  .nav {
-    display: hidden;
-  }
   .nav-desktop {
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(7px) saturate(160%) contrast(45%) brightness(140%);
@@ -977,10 +974,21 @@ input#slider::-ms-tooltip {
   }
   .nav__item-desktop {
     font-size: 2rem;
+    color: var(--color-purple-main);
+    transition: 0.3s;
+  }
+  .nav__item-desktop > a:hover {
+    color: var(--color-purple-accent-light);
   }
 }
 @media screen and (max-width: 1200px) {
   .hidden-1200 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .hidden-1201 {
     display: none;
   }
 }
