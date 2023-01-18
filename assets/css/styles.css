@@ -798,6 +798,9 @@ input#slider::-ms-tooltip {
   .card--white {
     margin-top: 14rem;
   }
+  .card--dark {
+    margin-top: 14rem;
+  }
   .video {
     width: 50vw;
   }
