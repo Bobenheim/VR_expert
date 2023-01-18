@@ -295,6 +295,12 @@ h3 {
   50px 50px 95px rgba(0, 0, 0, 0.1)
 ;
 }
+.card--contact {
+  padding: 2rem;
+  background-color: #ffff;
+  width: 90vw;
+  max-width: 600px;
+}
 
 .card--white {
   background-color: #fff;
@@ -493,6 +499,9 @@ ul.footer--list {
   opacity: 1;
 }
 /* BRANDS */
+.brands {
+  margin-top: 8rem;
+}
 .brands--layout {
   display: flex;
   flex-direction: row;
@@ -517,7 +526,11 @@ ul.footer--list {
 .contact {
   color: var(--color-purple-accent-light);
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.contact--header {
+  margin-top: 6rem;
 }
 /* BUTTONS */
 .btn {
@@ -827,6 +840,7 @@ input#slider::-ms-tooltip {
     width: 250vw;
     margin: 6rem 5vw 0 2rem;
   }
+
   .card--center {
     display: flex;
     flex-direction: row;
@@ -851,6 +865,7 @@ input#slider::-ms-tooltip {
     width: 25vw;
     margin-left: 4vw;
   }
+
   .video {
     width: 50vw;
     margin: 4rem 0 0 0;
@@ -890,5 +905,21 @@ input#slider::-ms-tooltip {
   .side-to-side {
     display: flex;
     flex-direction: row;
+  }
+  .contact--header {
+    font-size: 3.6rem;
+    color: var(--color-purple-main);
+  }
+  .contact-cards {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card--contact {
+    padding: 6rem 2rem;
+    width: 40vw;
+    max-width: 900px;
   }
   }
