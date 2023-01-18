@@ -17,7 +17,7 @@
 <body>
     <header>
 <!-- NAVBAR -->
-<nav class="nav collapsible">
+<nav class="nav collapsible hidden-desktop">
     <a class="nav__brand" href="#hero"><img class="logo" src="/assets/images/VRexpert_color.png" alt="logo of the company"></a>
             <i class="fa fa-bars menu--icon nav__toggler"></i>
         <ul class="list nav__list collapsible__content hv">
@@ -26,6 +26,17 @@
             <li class="nav__item"><a href="#studies">Případové studie</a></li>
             <li class="nav__item"><a href="#gallery">Galerie</a></li>
             <li class="nav__item"><a href="#contact">Kontakt</a></li>
+        </ul>
+</nav>
+
+<nav class="nav-desktop hidden-mobile">
+    <a class="nav__brand" href="#hero"><img class="logo" src="/assets/images/VRexpert_color.png" alt="logo of the company"></a>
+        <ul class="">
+            <li class="nav__item-desktop"><a href="#client">Klientské změny</a></li>
+            <li class="nav__item-desktop"><a href="#VR">VR ready</a></li>
+            <li class="nav__item-desktop"><a href="#studies">Případové studie</a></li>
+            <li class="nav__item-desktop"><a href="#gallery">Galerie</a></li>
+            <li class="nav__item-desktop"><a href="#contact">Kontakt</a></li>
         </ul>
 </nav>
 <!-- HERO BANNER -->
@@ -45,7 +56,7 @@
         <div class="div--centered">
             <div class="line"></div>
         </div>
-            <div class="container__desktop--smaller">
+            <div class="container__desktop">
                 <div class="side-to-side">
                     <div  class="side--padding">
                     <img class="icon--title" src="/assets/images/arrow-cross.svg" alt="">
@@ -63,7 +74,7 @@
                 </div>
 
 <!-- VISU -->
-    <div id="visualization" class="container container__desktop side--padding">
+    <div id="visualization" class="side--padding">
         <div class="card card--center card--white">
             <div class="display-left">
                 <img class="icon--title" src="/assets/images/hotel.svg" alt="">
@@ -79,7 +90,7 @@
 </section>
 <!-- VR ready-->
     <section id="VR" class="container skewed--both black__background margin--bottom">
-        <h2 class="heading__light side--padding">Na míru</br>přímo pro Vás</h2>
+        <h2 class="heading__light side--padding">Přizpůsobené</br>přímo pro Vás</h2>
         <img class="banner padding--bottom banner__img" src="/assets/images/Banner_2.png" alt="">
         <div class="container__desktop">
             <div class="container--center">

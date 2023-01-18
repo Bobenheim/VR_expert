@@ -278,6 +278,7 @@ p {
 }
 .hero__desc {
   color: #fff;
+  margin-top: 0;
   margin-bottom: 10rem;
   padding: 0 2rem;
   text-align: center;
@@ -652,12 +653,11 @@ a {
 }
 /* BEFORE AFTER SLIDER */
 .container--slider { 
-	height: 73.5vw;
+	width: 90vw;
 	margin: 4rem auto 0 auto;
-	max-height: 750px;
-	max-width: 1000px;
+	max-height: 350px;
+	max-width: 600px;
 	overflow: hidden;
-	width: 98vw;
 }
 /* SLIDER 1 */
 .container--slider figure { 
@@ -680,7 +680,7 @@ a {
 	min-width: 0.6%;
 	overflow: visible;
 	position: absolute;
-	width: 50%; 
+	width: 100%; 
 	animation: first 2s 1 normal ease-in-out 0.1s; 
 	-webkit-animation: first 2s 1 normal ease-in-out 0.1s; 
 }
@@ -784,6 +784,32 @@ input#slider::-ms-tooltip {
   .show-mobile {
     display: none;
   }
+  .hidden-desktop {
+    display: none;
+  }
+  .nav-desktop {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(7px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .nav-desktop > ul {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav__item-desktop {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -865,7 +891,7 @@ input#slider::-ms-tooltip {
   }
   .container--slider {
     width: 250vw;
-    margin: 6rem 5vw 0 2rem;
+    margin: 0 5vw 0 2rem;
   }
 
   .card--center {
@@ -949,4 +975,4 @@ input#slider::-ms-tooltip {
     width: 40vw;
     max-width: 900px;
   }
-  }
+}
