@@ -814,9 +814,6 @@ input#slider::-ms-tooltip {
     padding-left: 10vw;
     padding-right: 10vw;
   }
-  .collapsible__img {
-    width: 90%;
-  }
   .card__max-width {
     width: 500px;
     margin-top: 4rem;
@@ -824,5 +821,16 @@ input#slider::-ms-tooltip {
   }
   .brands--layout {
     margin-top: 6rem;
+  }
+  .link-purple {
+    background-color: var(--color-purple-accent);
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem 2rem 0 2rem;
+    margin-top: -20rem;
+    margin-right: -50vw;
+  }
+  .link-purple:hover {
+    color: #fff;
   }
   }
