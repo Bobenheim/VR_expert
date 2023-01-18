@@ -610,7 +610,6 @@ a {
 }
 .collapsible__img {
   width: 100%;
-  border-radius: var(--border-radius);
   margin-top: 2rem;
 }
 /* BEFORE AFTER SLIDER */
