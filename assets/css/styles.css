@@ -819,7 +819,6 @@ input#slider::-ms-tooltip {
   }
   .card--dark {
     padding-bottom: 0;
-    margin-top: 0;
     margin-bottom: 10rem;
   }
   .card__img {
@@ -828,7 +827,7 @@ input#slider::-ms-tooltip {
   }
   .video {
     width: 50vw;
-    margin: 0;
+    margin: 4rem 0 0 0;
   }
   .banner__img {
     width: 30vw;
@@ -861,7 +860,7 @@ input#slider::-ms-tooltip {
     border-radius: 20px;
     padding: 0.5rem 2rem 0 2rem;
     margin-top: -20rem;
-    margin-right: -50vw;
+    margin-right: -40vw;
   }
   .link-purple:hover {
     color: #fff;
