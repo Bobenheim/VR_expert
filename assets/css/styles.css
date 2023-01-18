@@ -64,6 +64,15 @@ h3 {
 }
 
 /* REUSED */
+.line {
+  width: 60px;
+  opacity: 0.6;
+  margin-top: -4rem;
+  margin-bottom: 4rem;
+  height: 0;
+  border: 1px solid var(--color-purple-accent-light);
+  display: inline-block;
+}
 .bg__white {
   background-color: #fff;
 }
@@ -124,11 +133,15 @@ h3 {
 
 /* LINKS */
 .link-purple {
-  color: var(--color-purple-accent);
+  background-color: var(--color-purple-accent);
+  color: #fff;
+  border-radius: 20px;
+  padding: 1rem 2rem 1rem 2rem;
   transition: 0.3s;
 }
 .link-purple:hover {
-  color:var(--color-purple-main);
+  color: #fff;
+  box-shadow: 0 0 20px #8d6bcc62;
 }
 .hover__link {
   cursor: pointer;
@@ -312,13 +325,22 @@ ul.footer--list {
 }
 
 .footer__section {
-  padding: 2rem;
-  border-bottom: 1px solid #393939;
+  margin: 0 2rem;
+  padding: 0rem 2rem 1rem 2rem;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow:
+  4.5px 2.7px 4.1px rgba(0, 0, 0, 0.017),
+  12.5px 7.5px 11.3px rgba(0, 0, 0, 0.025),
+  30.1px 18.1px 27.1px rgba(0, 0, 0, 0.033),
+  100px 60px 90px rgba(0, 0, 0, 0.05)
+;
 }
 
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  color: var(--color-purple-main);
 }
 
 .footer__brand {
@@ -757,7 +779,6 @@ input#slider::-ms-tooltip {
   }
   .banner {
     width: 66.6%;
-    margin-left: 10vw;
     margin-top: 6rem;
   }
 }
@@ -798,8 +819,13 @@ input#slider::-ms-tooltip {
     padding-left: 20vw;
     padding-right: 20vw;
   }
+  .container__desktop--smaller {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
   .container--slider {
-    width: 88%;
+    width: 250vw;
+    margin: 6rem 5vw 0 2rem;
   }
   .card--center {
     display: flex;
@@ -818,7 +844,7 @@ input#slider::-ms-tooltip {
     margin-top: 8rem;
   }
   .card--dark {
-    padding-bottom: 0;
+    padding-bottom: 2rem;
     margin-bottom: 10rem;
   }
   .card__img {
@@ -854,18 +880,15 @@ input#slider::-ms-tooltip {
   .brands--layout {
     margin-top: 6rem;
   }
-  .link-purple {
-    background-color: var(--color-purple-accent);
-    color: #fff;
-    border-radius: 20px;
-    padding: 0.5rem 2rem 0 2rem;
-    margin-top: -20rem;
-    margin-right: -40vw;
-  }
-  .link-purple:hover {
-    color: #fff;
-  }
+
   .footer__heading {
     font-size: 2.6rem;
+  }
+  .collapsible__chevron {
+    margin-top: 2rem;
+  }
+  .side-to-side {
+    display: flex;
+    flex-direction: row;
   }
   }
