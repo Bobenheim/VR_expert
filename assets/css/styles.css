@@ -654,8 +654,9 @@ a {
 /* BEFORE AFTER SLIDER */
 .container--slider { 
 	width: 90vw;
+  height: 90vw;
 	margin: 4rem auto 0 auto;
-	max-height: 350px;
+	max-height: 400px;
 	max-width: 600px;
 	overflow: hidden;
 }
@@ -666,7 +667,7 @@ a {
 	font-size: 0;
 	height: 100%;
 	margin: 0; 
-	position: relative;
+  position: relative;
 	width: 100%; 
 }
 #compare {
@@ -868,7 +869,7 @@ input#slider::-ms-tooltip {
   }
   .container--slider {
     width: 250vw;
-    margin: 0 5vw 0 2rem;
+    margin: 6rem 5vw 0 2rem;
   }
 
   .card--center {
@@ -972,7 +973,7 @@ input#slider::-ms-tooltip {
     justify-content: space-around;
     align-items: center;
   }
-  .nav__item-desktop {
+  .nav__item-desktop > a {
     font-size: 2rem;
     color: var(--color-purple-main);
     transition: 0.3s;

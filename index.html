@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VR expert - VR pro jakýkoli Váš projekt</title>
+
+    <meta name="author" content="VR expert">
+    <meta name="description" content="VR služby vytvořené na míru pro jakýkoli Váš projekt. 3D vizualizace s klientskými změnami, reálné vizualizace, responzivní VR prohlídky a mnoho dalšího ...">
+    <meta name="keywords" content="VR, VR expert, Virtuální, realita, virtuální reality, 3D vizualizace, 3D, ">
+
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,13 +17,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/hover.css">
-    <script src="https://kit.fontawesome.com/ff80f7c160.js" crossorigin="anonymous"></script>    
+
+    <script src="https://kit.fontawesome.com/ff80f7c160.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="/assets/images/logo_titlebar.png" type="image/icon type">
 </head>
 <body>
     <header>
 <!-- NAVBAR -->
 <nav class="nav collapsible hidden-1201">
-    <a class="nav__brand" href="#hero"><img class="logo" src="/assets/images/VRexpert_color.png" alt="logo of the company"></a>
+    <a class="nav__brand" href="#hero"><img class="logo" src="/assets/images/VRexpert_color.png" alt="VR expert logo"></a>
             <i class="fa fa-bars menu--icon nav__toggler"></i>
         <ul class="list nav__list collapsible__content hv">
             <li class="nav__item"><a href="#client">Klientské změny</a></li>
@@ -30,7 +38,7 @@
 </nav>
 
 <nav class="nav-desktop hidden-1200">
-    <a class="nav__brand" href="#hero"><img class="logo" src="/assets/images/VRexpert_color.png" alt="logo of the company"></a>
+    <a class="nav__brand" href="#hero"><img class="logo" src="/assets/images/VRexpert_color.png" alt="VR expert logo"></a>
         <ul class="">
             <li class="nav__item-desktop"><a href="#client">Klientské změny</a></li>
             <li class="nav__item-desktop"><a href="#VR">VR ready</a></li>
@@ -44,7 +52,7 @@
     <section  id="hero">
         <div class="hero__background">
             <div>
-            <img class="hero__image" src="/assets/images/Herobanner-1.png" alt="hero banner">
+            <img class="hero__image" src="/assets/images/Herobanner-1.png" alt="hero banner - úvodní banner">
             </div>
             <h1 class="hero__heading">VR</h1>
             <p class="hero__desc">pro jakýkoli Váš projekt</p>
@@ -59,7 +67,7 @@
             <div class="container__desktop">
                 <div class="side-to-side">
                     <div  class="side--padding">
-                    <img class="icon--title" src="/assets/images/arrow-cross.svg" alt="">
+                    <img class="icon--title" src="/assets/images/arrow-cross.svg" alt="ikona naznačující klientské změny">
                     <h3 class="heading--title">Klientské změny</h3>
                     <p>Umožňujeme implementaci pro klientské změny, kdy si sami mohou navolit barvy, nebo i materiály stěn, dveří či jiných komponentů nemovitosti, tudíž si klienti sami mohou zobrazit nemovitost tak, jak by se jim nejvíce líbila.</p>
                     <a href="https://3dvre.cz/demo/" class="text--accent hover__link" target="_blank">přejít na projekt  <i class="fa-solid fa-arrow-right icon--red"></i></a>
@@ -77,12 +85,12 @@
     <div id="visualization" class="side--padding">
         <div class="card card--center card--white">
             <div class="display-left">
-                <img class="icon--title" src="/assets/images/hotel.svg" alt="">
+                <img class="icon--title" src="/assets/images/hotel.svg" alt="ikona budovy">
                 <h3 class="heading--title">Reálná</br>vizualizace</h3>
                 <p>Model vytváříme nejen tak, aby odpovídal realitě, ale zároveň ho do ní i zasadíme. Je tak možné zobrazit si nemovitost reálně tam, kde bude stát a zákazník se může rozhlédnout i po dané lokalitě.</p>
             </div>
             <div>
-                <img class="card__img banner"src="/assets/images/vizu_ext.webp" alt="">
+                <img class="card__img banner"src="/assets/images/vizu_ext.webp" alt="obrázek digitální vizualizace budovy z exteriéru">
             </div>
         </div>
     </div>
@@ -91,28 +99,28 @@
 <!-- VR ready-->
     <section id="VR" class="container skewed--both black__background margin--bottom">
         <h2 class="heading__light side--padding">Přizpůsobené</br>přímo pro Vás</h2>
-        <img class="banner padding--bottom banner__img" src="/assets/images/Banner_2.png" alt="">
+        <img class="banner padding--bottom banner__img" src="/assets/images/Banner_2.png" alt="isometrický obrázek brýlí pro virtuální realitu">
         <div class="container__desktop">
             <div class="container--center">
                 <div class="side--padding display-center">
-                    <img class="icon--title" src="/assets/images/vr-glasses.svg" alt="">
+                    <img class="icon--title" src="/assets/images/vr-glasses.svg" alt="ikona virtuálních brýlí">
                     <h3 class="heading--title heading__light">VR ready</h3>
                     <p>Veškeré naše virtuální prohlídky je také možné zobrazit ve virtuálních brýlích a vtáhnout tak lidi přímo do nemovitosti. V prohlídce si mohou projít kompletně celou nemovitost a vidět tak veškeré její aspekty.</p>
                 </div>
                 <div class="div--centered padding--bottom">
-                    <video class="video" src="/assets/images/oculus.mov" type="vide/mov" autoplay loop></video>
+                    <video class="video" src="/assets/images/oculus.mov" type="vide/mov" autoplay loop alt="video představující virtuální brýle značky oculus v různých úhlech"></video>
                 </div>
             </div>
 <!-- RESPONSIVE -->
             <div class="side--padding">
                 <div class="card card--center card--dark  margin--bottom">
                     <div class="display-left">
-                        <img class="icon--title" src="/assets/images/responsive.svg" alt="">
+                        <img class="icon--title" src="/assets/images/responsive.svg" alt="ikona laptopu a mobilu vedle sebe">
                         <h3 class="heading--title heading__light">Responzivní</h3>
                         <p>Vizualizace Vám snadno vložíme na web, kde je bude možné prohlédnout na jakémkoli zařízení. Může si je tak kdokoli prohlédnout a Vy se nemusíte starat o to, na jakém zařízení si je zobrazí.</p>
                         <a href="https://3dvre.cz/nadrazni/" class="text--accent hover__link hvr-underline-from-left margin--bottom" target="_blank">přejít na projekt   <i class="fa-solid fa-arrow-right icon--red"></i></a></a>
                     </div>
-                    <img class="banner center bg__white card__img" src="/assets/images/devices_mockup.webp" alt="">
+                    <img class="banner center bg__white card__img" src="/assets/images/devices_mockup.webp" alt="obrázek laptopu a telefonu zobrazující stejnou stránku přízpůsobenou na dané zařízení">
                 </div>
             </div>
         </div>
@@ -137,11 +145,11 @@
         <section class="collapsible footer__section">
             <header class="collapsible__header">
                 <h3 class="collapsible__heading footer__heading">Alzheimer centrum Vyškov</h3>
-                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="">
+                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="ikona šipky">
             </header>
             <div class="collapsible__content">
                     <div class="div--centered">
-                        <img class="collapsible__img"src="/assets/images/vyskov.webp" alt="">
+                        <img class="collapsible__img"src="/assets/images/vyskov.webp" alt="obrázek zobrazující Alzheimer centrum vyškov">
                         <a href="https://3dvre.cz/ac3/" target="_blank"><p class="hover__link link-purple">navštívit projekt</p></a>
                     </div>
             </div>
@@ -150,11 +158,11 @@
         <section class="collapsible footer__section">
             <header class="collapsible__header">
                 <h3 class="collapsible__heading footer__heading">Byty Nádražní</h3>
-                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="">
+                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="ikona šipky">
             </header>
             <div class="collapsible__content">
                     <div class="div--centered">
-                        <img class="collapsible__img"src="/assets/images/nadrazni.webp" alt="">
+                        <img class="collapsible__img"src="/assets/images/nadrazni.webp" alt="obrázek zobrazující byty Nádražní">
                         <a href="https://3dvre.cz/nadrazni/" target="_blank"><p class="hover__link link-purple">navštívit projekt</p></a>
                     </div>
             </div>
@@ -163,11 +171,11 @@
         <section class="collapsible footer__section">
             <header class="collapsible__header">
                 <h3 class="collapsible__heading footer__heading">Trojdomy Třebušice</h3>
-                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="">
+                    <img class="icon collapsible__chevron" src="/assets/images/chevron.svg" alt="ikona šipky">
             </header>
             <div class="collapsible__content">
                     <div class="div--centered">
-                        <img class="collapsible__img"src="/assets/images/trebus.webp" alt="">
+                        <img class="collapsible__img"src="/assets/images/trebus.webp" alt="obrázek zobrazující byty Třebušice">
                         <a href="https://3dvre.cz/trebus/" target="_blank"><p class="hover__link link-purple">navštívit projekt</p></a>
                     </div>
             </div>
@@ -271,12 +279,12 @@
     <div class="contact-cards">
         <div class="card card--contact">
             <a class="contact" href="tel:+420606211608">
-            <img class="icon--title" src="/assets/images/phone.svg" alt="">
+            <img class="icon--title" src="/assets/images/phone.svg" alt="ikona mobilního telefonu">
             <p class="hover__link">+420 606 211 608</a></p>
         </div>
         <div class="card card--contact">
             <a class="contact" href="mailto:info@vre.cz">
-            <img class="icon--title" src="/assets/images/email.svg" alt="">
+            <img class="icon--title" src="/assets/images/email.svg" alt="ikona emailu">
             <p class="hover__link"><a class="contact" href="mailto:info@vre.cz">info@vre.cz</a></p>
         </div>
     </div>
@@ -285,10 +293,10 @@
 <section id="brands" class="brands side--padding">
     <h2>Značky</br>kterým věříme</h2>
     <div class="brands--layout margin--bottom">
-        <a href="https://www.unrealengine.com/en-US" target="_blank"><img class="cursor brand__img brand__smaller" src="/assets/images/unrealengine_logo.png" alt=""></a>
-        <a href="https://graphisoft.com/solutions/archicad" target="_blank"><img class="cursor brand__img" src="/assets/images/archicad_logo.png" alt=""></a>
-        <a href="https://matterport.com/" target="_blank"><img class="cursor brand__img" src="/assets/images/matterport_log.png" alt=""></a>
-        <a href="https://www.oculus.com/" target="_blank"><img class="cursor brand__img" src="/assets/images/oculus_logo.png" alt=""></a>
+        <a href="https://www.unrealengine.com/en-US" target="_blank"><img class="cursor brand__img brand__smaller" src="/assets/images/unrealengine_logo.png" alt="logo značky Unreal engine"></a>
+        <a href="https://graphisoft.com/solutions/archicad" target="_blank"><img class="cursor brand__img" src="/assets/images/archicad_logo.png" alt="logo značky Archicad"></a>
+        <a href="https://matterport.com/" target="_blank"><img class="cursor brand__img" src="/assets/images/matterport_log.png" alt="logo značky Matterport"></a>
+        <a href="https://www.oculus.com/" target="_blank"><img class="cursor brand__img" src="/assets/images/oculus_logo.png" alt="logo značky Oculus"></a>
     </div>
 </section>
 <!-- FOOTER -->    
@@ -308,12 +316,12 @@
                 </div>
             </section> -->
             <section class="footer__brand">
-                <a href="#hero"><img src="/assets/images/VRexpert_logo_white.png" alt="company logo"></a>
+                <a href="#hero"><img src="/assets/images/VRexpert_logo_white.png" alt="VR expert logo"></a>
                 <p class="footer__copyright">Copyright 2023 VR expert</p>
             </section>
         </div>
     </footer>
-    <script src="/js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
